@@ -153,11 +153,12 @@ button:focus {
     border: var(--border) !important;
     border-radius: 54px !important;
     padding: 4px !important;
-    display: none;
+    opacity: 0;
 }
 
 .dropdown-item:hover .fa-arrow-right {
-    display: inline;
+    opacity: 1;
+
 }
 
 @media only screen and (max-width: 600px) {

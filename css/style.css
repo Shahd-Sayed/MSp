@@ -41,13 +41,15 @@
 }
 
 .SectionGrid .col p:nth-child(1) {
-    color: var(--purple-accent) !important;
+    background: var(--purple-accent) !important;
     font-size: 1rem !important;
-    font-weight: 400 !important;
-    border: 1px solid var(--purple-accent);
+    font-weight: 800 !important;
     border-radius: var(--third-border-radius) !important;
     padding: 12px 24px !important;
     width: fit-content !important;
+    color: #fff !important;
+    box-shadow: inset 0px 0px 10px 7px #3e0e42, 3px 3px 4px 1px #7b1d805c;
+
 }
 
 .SectionGrid .col h2 {
@@ -288,15 +290,31 @@
 
 .btn-sections {
     padding: 12px 24px;
-    background-color: var(--purple-accent) !important;
+    /* background-color: var(--purple-accent) !important; */
     border-radius: var(--second-border-radius);
     outline: none;
     border: var(--border) !important;
     width: 300px !important;
-}
+    transition: var(--transation);
+    box-shadow: inset 0px 0px 10px 30px #7a1d7f;
+    border: transparent 2px solid !important;
 
-.btn-sections a,
-.btn-sections a:hover {
+}
+.btn-sections:hover a,
+.btn-sections:hover.btn-sections:hover{
+    box-shadow:none;
+    color: var(--purple-accent) !important;
+    background-color: transparent !important;
+    
+}
+.btn-sections:hover{
+    border: var(--purple-accent) 2px solid !important;
+
+}
+/* .btn-sections:hover a{
+color: var(--purple-accent) !important;
+} */
+.btn-sections a{
     color: var(--section-background-color) !important;
     text-decoration: none !important;
     font-size: 18px;
@@ -527,18 +545,18 @@
 .questionsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 3.375rem;
 }
 
 details:first-child {
     margin: 1em 0;
 }
 
-details {
-    margin: 1.94rem 0;
+details { 
+    margin:2.224rem 0;
 
     padding: 0 1rem;
-    width: 80%;
+    width: 100%;
     position: relative;
     border: 1px solid var(--secondary-text-color);
     border-radius: 6px;

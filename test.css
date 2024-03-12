@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: item;
+}
+.item3{
+    grid-area: left;
+}
+.item4{
+    grid-area: footer;
+}
+.item5{
+    grid-area: right;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 'header header header item item item'
+    'left left footer footer right right';
+    gap: 20px;
+}
+.grid .section img{
+    width: 100%;
+}
